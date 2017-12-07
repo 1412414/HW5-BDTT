@@ -172,7 +172,7 @@
                     return d.qSpecies;
                 })
                 .attr("plotsize", function(d) {
-                    return d.PlotSize;
+                    return d.PlotSize.toUpperCase();
                 })
                 .attr("cx", function(d) {
                     return projection([d.Longitude, data.Latitude])[0];

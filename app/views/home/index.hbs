@@ -136,14 +136,14 @@
             exist = 0;
             for (var i = 0; i < data.length; i++) {
                 for (var j = 0; j < PlotSize.length; j++) {
-                    if (PlotSize[j] == data[i].PlotSize) {
+                    if (PlotSize[j] == data[i].PlotSize.toUpperCase()) {
                         exist = 1;
                         break;
                     }
                 }
 
                 if (exist == 0) {
-                    PlotSize.push(data[i].PlotSize);
+                    PlotSize.push(data[i].PlotSize.toUpperCase());
                 }
                 else {
                     exist = 0;
